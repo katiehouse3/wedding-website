@@ -1,0 +1,166 @@
+@font-face {
+    font-family: nolean;
+    src: url(../fonts/NOELAN.ttf);
+  }
+body {
+  background-color: #CCB5C5;
+}
+
+
+.cover{
+    background: url('../img/will-and-kt-header-2.jpg') no-repeat center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+
+#date{
+  background: url('../img/flowers-background-0.png') no-repeat center; 
+}
+
+#venue{
+  background: url('../img/flowers-background-1.png') no-repeat center; 
+}
+
+#story{
+  background: url('../img/flowers-background-2.png') no-repeat center; 
+}
+
+#schedule{
+  background: url('../img/flowers-background-3.png') no-repeat center; 
+}
+
+#travel{
+  background: url('../img/flowers-background-4.png') no-repeat center; 
+}
+
+#where-to-stay{
+  background: url('../img/flowers-background-5.png') no-repeat center; 
+}
+
+#faq{
+  background: url('../img/flowers-background-6.png') no-repeat center; 
+}
+
+.alert-light{
+  background-color:#CCD9E2;
+  border-color:#97bed4;
+  color:#343a40;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none !important;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+
+  -webkit-transition: all .1s linear;
+          transition: all .1s linear; 
+}
+
+a:hover, a:focus {
+  -webkit-transform: scale(1.015);
+      -ms-transform: scale(1.015);
+          transform: scale(1.015); 
+        
+}
+
+
+
+p, a, li{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.QA{
+  font-family: 'Quicksand', sans-serif;
+}
+h1{
+    font-family: 'Zeyada', cursive;
+    font-size:6em;
+}
+
+h2 {
+    font-family: 'Zeyada', cursive;
+    font-size:4em;
+}
+
+h3 {
+    font-family: 'Zeyada', cursive;
+    font-size:3em;
+}
+
+
+.subtitle {
+    margin-bottom:0;
+    font-size:1.3em;
+}
+
+
+.polaroid {
+    background: #ffffff;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 15px 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
+    z-index: 0;
+    position: relative;
+  }
+  .polaroid-tilted{
+    transform: rotate(-2deg);
+  }
+  
+  .polaroid .polaroid-img:after {
+    color: #333;
+    font-size: 12px;
+    content: attr(title);
+    position: relative;
+    top: 15px;
+  }
+  
+  .polaroid img {
+    display: block;
+    width: 250px;
+    margin:auto
+  }
+
+
+  /* Alert */
+  .alert .icon{
+    display:table-cell;
+    vertical-align: top;
+}
+
+.alert div,
+.alert span{
+    padding-left: 5px;
+    display:table-cell;
+}
+
+.card-columns {
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-count: 2;
+  }
+
+section{
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+@media (max-width: 600px) {
+  .card-columns {
+      -webkit-column-count:1;
+      -moz-column-count:1;
+      column-count:1;
+  }
+}
