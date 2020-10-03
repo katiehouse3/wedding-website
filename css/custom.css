@@ -45,13 +45,14 @@ body {
 }
 
 .alert-light{
-  background-color:#CCD9E2;
-  border-color:#97bed4;
+  background-color:#a395e03b;
+  border-color:#a395e0;
   color:#343a40;
 }
 
 a {
   display: inline-block;
+  color:#7d67da;
   text-decoration: none !important;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
@@ -62,13 +63,16 @@ a {
 }
 
 a:hover, a:focus {
+  color:#8474ca;
   -webkit-transform: scale(1.015);
       -ms-transform: scale(1.015);
           transform: scale(1.015); 
         
 }
 
-
+.location-link{
+  color:black;
+}
 
 p, a, li{
     font-family: 'Quicksand', sans-serif;
