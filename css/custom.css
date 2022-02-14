@@ -2,6 +2,7 @@
     font-family: nolean;
     src: url(../fonts/NOELAN.ttf);
   }
+  
 body {
   background-color: #CCB5C5;
 }
@@ -16,12 +17,21 @@ body {
 }
 
 
-#date{
+#RSVP{
+  padding-top:0;
+  margin-top:0;
   background: url('../img/flowers-background-0.png') no-repeat center; 
 }
 
+
 #venue{
   background: url('../img/flowers-background-1.png') no-repeat center; 
+  margin-top: -150px;
+  z-index:1000;
+  position:relative;
+  background-color:#CCB5C5 !important;
+  padding-top:100px;
+
 }
 
 #story{
@@ -38,6 +48,7 @@ body {
 
 #where-to-stay{
   background: url('../img/flowers-background-5.png') no-repeat center;
+  padding-bottom:0px;
 }
 
 #faq{
@@ -74,8 +85,9 @@ a:hover, a:focus {
   color:black;
 }
 
-p, a, li{
+p, a, li, small{
     font-family: 'Quicksand', sans-serif;
+    font-size:18px;
 }
 
 .QA{
@@ -167,4 +179,180 @@ section{
       -moz-column-count:1;
       column-count:1;
   }
+}
+
+
+
+#loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  background-color: #CCB5C5;
+  z-index: 2000;
+}
+
+#loading-image {
+  z-index: 2000;
+  width:100px;
+}
+
+/* CSS */
+/* GENERAL BUTTON STYLING */
+
+
+/* CSS */
+.button-78 {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #482c50;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: 'Quicksand', sans-serif;;
+  font-size: 24px;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .button-78 {
+    padding: 19px 32px;
+  }
+}
+
+.button-78:before,
+.button-78:after {
+  border-radius: 10px;
+}
+
+.button-78:before {
+  background-image: linear-gradient(92.83deg, #ffffff 0, #ffffff 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.button-78:after {
+  background-color: initial;
+  background-image: linear-gradient(#CCB5C5 0, rgb(219, 198, 250) 0%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 300ms ease-out;
+  z-index: -1;
+}
+
+.button-78:hover:not(:disabled):before {
+  background: linear-gradient(92.83deg, rgb(255, 255, 255) 0%, rgb(248, 240, 232) 100%);
+}
+
+.button-78:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+
+.button-78:active:not(:disabled) {
+  color: #ccc;
+}
+
+.button-78:active:not(:disabled):before {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ffffff 0, #ebdede 100%);
+}
+
+.button-78:active:not(:disabled):after {
+  background-image: linear-gradient(#15540f 0, #0c0d0d 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.button-78:disabled {
+  cursor: default;
+  opacity: .24;
+}
+
+/* FAQ dropdown */
+main {
+  max-width: 520px;
+  margin: 0 auto;
+}
+summary {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.10rem;
+  font-weight: 600;
+  background-color: #fff;
+  color: #333;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 0.25rem;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0; margin-top: -10px}
+  100%  {opacity: 1; margin-top: 0px}
+}
+details > summary::after {
+  position: absolute;
+  content: "+";
+  right: 20px;
+}
+details[open] > summary::after {
+  position: absolute;
+  content: "-";
+  right: 20px;
+}
+details > summary::-webkit-details-marker {
+  display: none;
 }
