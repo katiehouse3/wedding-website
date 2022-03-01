@@ -61,6 +61,19 @@ body {
   color:#343a40;
 }
 
+.alert-rsvp{
+      background-color: rgb(219, 198, 250) ;
+      border-width: 5px;
+    border-color: #ffffff;
+    border-radius: 10px;
+    color: #482c50;
+    font-family: 'Quicksand', sans-serif  !important;
+    font-size: 20px !important;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
 a {
   display: inline-block;
   color:#7d67da;
